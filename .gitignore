@@ -5,4 +5,5 @@
 /keyframes.css
 /screenshot.jpg
 /skins/
-/tmp-user/
+/tmp-user/*
+!/tmp-user/main-before.php
