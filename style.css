@@ -99,8 +99,11 @@ Version:    1.1.2
 
 /* Header */
 .logo-image {
-  padding: 60px 0 50px;
+  padding: 60px 0;
   line-height: 1;
+}
+.content {
+  margin-top: 60px;
 }
 
 /* Article List */
