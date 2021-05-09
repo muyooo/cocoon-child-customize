@@ -14,40 +14,52 @@ Version:    1.1.2
 ** 子テーマ用のスタイルを書く
 ************************************/
 /*必要ならばここにコードを書く*/
-/* Add contents */
+/* Analyze Category - Add contents */
+.analyze-cat-title {
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: .75em;
+}
 .analyze-cat {
   display: flex;
   justify-content: center;
   padding: 0;
+  opacity: 1;
+  transition: .8s;
 }
-.analyze-cat > li:not(:first-of-type) {
-  margin-left: 20px;
+.analyze-cat--hide {
+  opacity: 0;
 }
 .analyze-cat-list {
   list-style: none;
   position: relative;
 }
-.analyze-cat-tab-ratio,
-.analyze-cat-web-ratio,
-.analyze-cat-game-ratio {
+.analyze-cat-list:not(:first-of-type) {
+  margin-left: 36px;
+}
+@media screen and (max-width: 834px){
+  .analyze-cat-list:not(:first-of-type) {
+    margin-left: 20px;
+  }
+}
+.analyze-cat-ratio {
   display:block;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-  line-height: 3;
-  color: #7a99cf;
+  line-height: 40px;
+  color: #26499d;
   border-radius: 50%;
   background: #ccdde6;
   position: relative;
-  background-image: linear-gradient(to right, transparent 50%, #7a99cf 0);
+  background-image: linear-gradient(to right, transparent 50%, #26499d 0);
   margin-bottom: 60px;
   text-decoration: none;
+  transition: .2s;
 }
-.analyze-cat-tab-ratio::before,
-.analyze-cat-web-ratio::before,
-.analyze-cat-game-ratio::before {
+.analyze-cat-ratio::before {
   content: '';
   display: block;
   margin-left: 50%;
@@ -56,16 +68,16 @@ Version:    1.1.2
   background-color: inherit;
   transform-origin: left;
   transform: rotate(0deg);
+  transition: .8s;
 }
-.analyze-cat-tab-ratio::after,
-.analyze-cat-web-ratio::after,
-.analyze-cat-game-ratio::after {
-  text-align: center;
-  line-height: 80px;
-  color: #7a99cf;
+.analyze-cat-ratio::after {
+  color: #26499d;
+  font-size: 1.15em;
   font-weight: bold;
-  width: 80%;
-  height: 80%;
+  text-align: center;
+  width: 85%;
+  height: 85%;
+  line-height: 70.4px; /* calc(80px * 0.88) */
   background-color: #fff;
   position: absolute;
   top: 50%;
@@ -74,6 +86,15 @@ Version:    1.1.2
   margin: 0 auto;
   border-radius: 50%;
   transform: translateY(-50%);
+}
+.analyze-cat-ratio:hover {
+  color: #fcc800;
+  opacity: .7;
+  transition: .2s;
+  background-image: linear-gradient(to right, transparent 50%, #fcc800 0);
+}
+.analyze-cat-ratio:hover::after {
+  color: #fcc800;
 }
 
 /* Article List */
