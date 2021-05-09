@@ -98,11 +98,30 @@ Version:    1.1.2
 }
 
 /* Article List */
+.wrap {
+  width: 60%;
+}
+@media screen and (max-width: 834px){
+  .wrap {
+    width: 100%;
+  }
+}
 .main {
   padding: 0;
 }
+@media screen and (max-width: 834px){
+  .main {
+    padding: 16px 20px;
+  }
+}
 .entry-card-wrap {
   border: 1px solid #ccdde6;
+}
+.ect-3-columns .entry-card-wrap {
+  width: 30%;
+}
+.ect-vertical-card .entry-card-wrap {
+  margin-bottom: 3%;
 }
 
 /* Article */
