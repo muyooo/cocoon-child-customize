@@ -55,7 +55,7 @@ Version:    1.1.2
   background: #ccdde6;
   position: relative;
   background-image: linear-gradient(to right, transparent 50%, #26499d 0);
-  margin-bottom: 60px;
+  margin-bottom: 2em;
   text-decoration: none;
   transition: .2s;
 }
