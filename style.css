@@ -123,6 +123,9 @@ Version:    1.1.2
 .ect-vertical-card .entry-card-wrap {
   margin-bottom: 3%;
 }
+.pagination-next {
+  display: none;
+}
 .pagination {
   margin-top: 0;
 }
@@ -143,6 +146,10 @@ Version:    1.1.2
   color: #fff;
   background-color: #043c78;
   border: none;
+}
+.pagination .next,
+.pagination .prev {
+  display: none;
 }
 
 /* Article */
