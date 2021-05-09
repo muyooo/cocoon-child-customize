@@ -103,7 +103,27 @@ Version:    1.1.2
   line-height: 1;
 }
 .content {
-  margin-top: 60px;
+  margin-top: 0;
+}
+
+/* Search Box */
+.search-box {
+  width: 45%;
+  margin: 20px auto 80px;
+}
+.search-submit {
+  color: #ccdde6;
+}
+.search-edit, input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea, select {
+  padding: 6px 15px;
+  font-size: .8em;
+  color: #6d767b;
+  border-radius: 18px;
+  border-color: #ccdde6;
+}
+.archive-title,
+.archive-title + .search-box {
+  display: none;
 }
 
 /* Article List */
