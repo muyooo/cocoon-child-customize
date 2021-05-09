@@ -123,6 +123,27 @@ Version:    1.1.2
 .ect-vertical-card .entry-card-wrap {
   margin-bottom: 3%;
 }
+.pagination {
+  margin-top: 0;
+}
+.pagination a:hover {
+  background-color: #ccdde6;
+  transition: all 0.2s ease-in-out;
+}
+.page-numbers {
+  font-size: .8em;
+  color: #6d767b;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border: 1px solid #ccdde6;
+}
+.pagination .current {
+  color: #fff;
+  background-color: #043c78;
+  border: none;
+}
 
 /* Article */
 .instagram-media {
