@@ -22,7 +22,7 @@ Version:    1.1.2
 }
 .analyze-cat {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 0;
   opacity: 1;
   transition: .8s;
@@ -33,14 +33,8 @@ Version:    1.1.2
 .analyze-cat-list {
   list-style: none;
   position: relative;
-}
-.analyze-cat-list:not(:first-of-type) {
-  margin-left: 36px;
-}
-@media screen and (max-width: 834px){
-  .analyze-cat-list:not(:first-of-type) {
-    margin-left: 20px;
-  }
+  width: 25%;
+  overflow: hidden;
 }
 .analyze-cat-ratio {
   display:block;
@@ -55,9 +49,8 @@ Version:    1.1.2
   background: #ccdde6;
   position: relative;
   background-image: linear-gradient(to right, transparent 50%, #26499d 0);
-  margin-bottom: 2em;
+  margin: 0 auto 2em;
   text-decoration: none;
-  transition: .2s;
 }
 .analyze-cat-ratio::before {
   content: '';
@@ -95,6 +88,24 @@ Version:    1.1.2
 }
 .analyze-cat-ratio:hover::after {
   color: #fcc800;
+}
+.cat-recent-posts {
+  padding: 0;
+  list-style: none;
+}
+.cat-recent-post {
+  white-space: nowrap;
+  font-size: .75em;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+.cat-recent-post-date {
+  font-size: .74em;
+}
+.analyze-cat-link {
+  display: block;
+  font-size: .6666em;
+  text-align: center;
 }
 
 /* Header */

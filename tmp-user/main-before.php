@@ -29,6 +29,28 @@ $moveStopClass = 'analyze-cat-stop';
           <?= esc_attr( $categoryUniqueClass . ' ' ); ?>
           <?= esc_attr( $moveStopClass ); ?>
         "><?= esc_attr( $categoryDetail->name ); ?></a>
+
+        <?php
+          // 最近のカテゴリー記事の取得と表示
+          $categoryRecentPosts = get_posts( array(
+            'category_name' => $categoryDetail->slug,
+            'posts_per_page' => 3 
+          ));
+          if ($categoryRecentPosts) :
+        ?>
+        <ul class="cat-recent-posts">
+          <?php foreach ( $categoryRecentPosts as $post ) : ?>
+            <?php setup_postdata( $post );?>
+            <li class="cat-recent-post">
+              <span class="cat-recent-post-date"><?php the_time( 'Y.n.j' ); ?></span><br>
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            </li>
+          <?php endforeach ?>
+        </ul>
+        <a href="<?= esc_attr( $categoryURL ); ?>" class="analyze-cat-link">
+          <span class="fa fa-chevron-down" aria-hidden="true"></span>
+        </a>
+        <?php endif; ?>
     </li>
     <?php endforeach; ?>
 
@@ -40,14 +62,16 @@ $moveStopClass = 'analyze-cat-stop';
         $i = 0;
         for($i; $i < count($categoryCounts['slug']); $i++) {
           $targetRatio = $categoryRatioValue * $categoryCounts['count'][$i];
-          $targetMoveClassBefore = '.' . $categoryClass . '--' . $categoryCounts['slug'][$i] . '::before';
+          $targetMoveClass = '.' . $categoryClass . '--' . $categoryCounts['slug'][$i];
+          $targetMoveClassBefore = $targetMoveClass . '::before';
           $targetDeg = 0;
           if ($targetRatio <= 50) {
             $targetDeg = 360 * $targetRatio / 100;
             echo $targetMoveClassBefore . '{transform: rotate(' . $targetDeg . 'deg);}'; 
           } else {
             $targetDeg = 360 * ($targetRatio - 50) / 100;
-            echo $targetMoveClassBefore . '{transform: rotate(' . $targetDeg . 'deg);background-color: #26499d;}'; 
+            echo $targetMoveClassBefore . '{transform: rotate(' . $targetDeg . 'deg);background-color: #26499d;}';
+            echo $targetMoveClass . ':hover::before {background-color: #fcc800;}';
           }
           $targetClassAfter = '.' . $categoryClass . '--' . $categoryCounts['slug'][$i] . '::after';
           echo $targetClassAfter . '{content:"' . $targetRatio .'%";}';
