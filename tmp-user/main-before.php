@@ -71,7 +71,7 @@ $moveStopClass = 'analyze-cat-stop';
           } else {
             $targetDeg = 360 * ($targetRatio - 50) / 100;
             echo $targetMoveClassBefore . '{transform: rotate(' . $targetDeg . 'deg);background-color: #26499d;}';
-            echo $targetMoveClass . ':hover::before {background-color: #fcc800;}';
+            echo $targetMoveClass . ':hover::before {background-color: #fcc800;transition: 0s;}';
           }
           $targetClassAfter = '.' . $categoryClass . '--' . $categoryCounts['slug'][$i] . '::after';
           echo $targetClassAfter . '{content:"' . $targetRatio .'%";}';
