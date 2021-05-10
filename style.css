@@ -14,6 +14,15 @@ Version:    1.1.2
 ** 子テーマ用のスタイルを書く
 ************************************/
 /*必要ならばここにコードを書く*/
+/* Setting */
+a:hover {
+  color: #fcc800;
+}
+.a-wrap:hover {
+  background-color: #fff;
+  border-color: #fcc800;
+}
+
 /* Analyze Category - Add contents */
 .analyze-cat-title {
   font-size: 1.2em;
