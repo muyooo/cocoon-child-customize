@@ -192,7 +192,7 @@ a:hover {
   padding-top: 1.5%;
   color: #5b6266;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1023px) {
   .e-card-title {
     font-size: 1em;
   }
