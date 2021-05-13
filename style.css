@@ -15,6 +15,11 @@ Version:    1.1.2
 ************************************/
 /*必要ならばここにコードを書く*/
 /* Setting */
+@media screen and (max-width: 834px) {
+  main.main, div.sidebar {
+    padding: 0 1.25em;
+  }
+}
 a:hover {
   color: #fcc800;
 }
@@ -168,7 +173,43 @@ a:hover {
   }
 }
 .entry-card-wrap {
-  border: 1px solid #ccdde6;
+  border-bottom: 1px solid #ccdde6;
+}
+.entry-card-wrap.a-wrap {
+  padding: 0 0 5%;
+  margin-bottom: 6%;
+}
+.entry-card-thumb, .widget-entry-card-thumb, .related-entry-card-thumb, .carousel-entry-card-thumb {
+  margin-top: 0;
+}
+.entry-card-thumb, .author-thumb, .blogcard-thumbnail, .related-entry-card-thumb, .popular-entry-card-thumb, .new-entry-card-thumb {
+  margin-right: 2.5%;
+}
+.ect-entry-card .card-thumb, .rect-entry-card .card-thumb, .ect-big-card-first .card-thumb {
+  margin-bottom: 0;
+}
+.entry-card-title, .related-entry-card-title {
+  margin: 0;
+  padding-top: 1.5%;
+  color: #5b6266;
+}
+@media screen and (max-width: 480px) {
+  .e-card-title {
+    font-size: 1em;
+  }
+  .entry-card, .related-entry-card, .e-card-title {
+      line-height: 1.5;
+  }
+}
+.entry-card-info > * {
+  font-size: 0.5555em;
+  padding: 0;
+}
+.e-card-info > span {
+  margin-right: 0;
+}
+.post-date > span {
+  display: none;
 }
 .ect-3-columns .entry-card-wrap {
   width: 30%;
@@ -176,6 +217,9 @@ a:hover {
 .ect-vertical-card .entry-card-wrap {
   margin-bottom: 3%;
 }
+.cat-label {
+  display: none;
+  }
 .pagination-next {
   display: none;
 }
