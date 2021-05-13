@@ -280,6 +280,16 @@ a:hover {
   margin-top: 0;
   font-size: 0.5555em;
 }
+
+/* Go to top */
+.go-to-top-button {
+  border: 1px solid #ccdde6;
+  border-radius: 50%;
+}
+.go-to-top-button span {
+  margin-bottom: 3px;
+}
+
 /************************************
 ** レスポンシブデザイン用のメディアクエリ
 ************************************/
