@@ -136,9 +136,12 @@ a:hover {
 }
 
 /* Search Box */
+.content-bottom {
+  margin: 2.777em auto;
+}
 .search-box {
-  width: 60%;
-  margin: 20px auto 80px;
+  width: 75%;
+  margin: 0 auto;
 }
 .search-submit {
   color: #ccdde6;
@@ -149,10 +152,6 @@ a:hover {
   color: #6d767b;
   border-radius: 18px;
   border-color: #ccdde6;
-}
-.archive-title,
-.archive-title + .search-box {
-  display: none;
 }
 
 /* Article List */
