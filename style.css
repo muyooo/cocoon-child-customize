@@ -255,6 +255,31 @@ a:hover {
 .instagram-media {
   margin:0 auto 12px!important;
 }
+
+/* Footer */
+.footer-bottom {
+  margin-top: 0;
+}
+.navi-footer-in > .menu-footer {
+  margin-bottom: 0.5555em;
+}
+.navi-footer-in a:hover {
+  background-color: #043c78;
+}
+@media screen and (max-width: 1023px){
+  .navi-footer-in > .menu-footer li.menu-item {
+    font-size: 0.7777em;
+    line-height: 1.3;
+    border-right: 1px solid #fff;
+  }
+  .navi-footer-in > .menu-footer li.menu-item:first-of-type {
+    border-left: 1px solid #fff;
+  }
+}
+.copyright {
+  margin-top: 0;
+  font-size: 0.5555em;
+}
 /************************************
 ** レスポンシブデザイン用のメディアクエリ
 ************************************/
