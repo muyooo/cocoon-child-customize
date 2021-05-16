@@ -30,11 +30,16 @@ a:hover {
 
 /* Analyze Category - Add contents */
 .analyze-cat-title {
-  font-size: 1.2em;
+  font-size: 1.3888em;
+  color: #043c78;
+  margin: 0 1.25em 6%;
+  padding-bottom: 0;
+  line-height: 1;
   text-align: center;
-  margin-bottom: .75em;
 }
 .analyze-cat {
+  width: 90%;
+  margin: 0 auto 2.777em;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -51,20 +56,44 @@ a:hover {
   width: 25%;
   overflow: hidden;
 }
+@media screen and (max-width: 1023px){
+  .analyze-cat-list {
+    width: auto;
+  }
+}
+.analyze-cat-headline {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+  transform: translateY(-40%);
+  font-size: 1em;
+  line-height: 1.05;
+}
+@media screen and (max-width: 1023px){
+  .analyze-cat-headline {
+    font-size: 1.3em;
+  }
+}
+.analyze-cat-headline::after{
+  font-size: 0.5555em
+}
 .analyze-cat-ratio {
   display:block;
-  width: 100px;
-  height: 100px;
+  width: 88px;
+  height: 88px;
   font-size: 0.7777em;
   font-weight: bold;
   text-align: center;
   line-height: 40px;
-  color: #26499d;
+  color: #f8b500;
   border-radius: 50%;
-  background: #ccdde6;
+  background: #fde9b2;
   position: relative;
-  background-image: linear-gradient(to right, transparent 50%, #26499d 0);
-  margin: 0 auto 2em;
+  background-image: linear-gradient(to right, transparent 50%, #f8b500 0);
+  margin: 0 auto .5em;
   text-decoration: none;
 }
 .analyze-cat-ratio::before {
@@ -79,13 +108,9 @@ a:hover {
   transition: .8s;
 }
 .analyze-cat-ratio::after {
-  color: #26499d;
-  font-size: 1.15em;
-  font-weight: bold;
-  text-align: center;
-  width: 85%;
-  height: 85%;
-  line-height: 85px; /* calc(100px * 0.85) */
+  content: "";
+  width: 94%;
+  height: 94%;
   background-color: #fff;
   position: absolute;
   top: 50%;
@@ -96,13 +121,8 @@ a:hover {
   transform: translateY(-50%);
 }
 .analyze-cat-ratio:hover {
-  color: #fcc800;
   opacity: .7;
   transition: .2s;
-  background-image: linear-gradient(to right, transparent 50%, #fcc800 0);
-}
-.analyze-cat-ratio:hover::after {
-  color: #fcc800;
 }
 .cat-recent-posts {
   padding: 0;
@@ -111,11 +131,16 @@ a:hover {
   padding-top: 10px;
   margin-top: 46px;
 }
+@media screen and (max-width: 1023px){
+  .cat-recent-posts {
+    display: none;
+  }
+}
 .cat-recent-post {
   white-space: nowrap;
   font-size: .666667em;
   line-height: 1.4;
-  margin-bottom: 10px;
+  margin-bottom: 0.5555em;
 }
 .cat-recent-post-date {
   font-size: .74em;
@@ -124,6 +149,7 @@ a:hover {
   display: block;
   font-size: 0.833em;
   text-align: center;
+  color: #f8b500;
 }
 
 /* Header */
