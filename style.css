@@ -209,11 +209,15 @@ a:hover {
     padding: 16px 20px;
   }
 }
-.widget-list-title {
+.list {
+  padding-top: 6%;
+  margin-top: 4.5%;
+  border-top: 1px solid #ccdde6;
+}
+.widget h2.widget-list-title,
+.archive-title {
+  font-size: 1.3888em;
   color: #043c78;
-  border-bottom: 1px solid #ccdde6;
-  margin-bottom: 6%;
-  padding: 0 0 4.5%;
   line-height: 1;
   text-align: center;
 }
