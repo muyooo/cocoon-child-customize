@@ -224,6 +224,9 @@ a:hover {
 .archive-title > span {
   display: none;
 }
+.archive-title + .search-box {
+  margin-bottom: 2.2222em;
+}
 .entry-card-wrap {
   border-bottom: 1px solid #ccdde6;
 }
