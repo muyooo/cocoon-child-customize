@@ -221,8 +221,8 @@ a:hover {
   line-height: 1;
   text-align: center;
 }
-.widget h2.widget-list-title {
-  font-size: 1.3888em;
+.archive-title > span {
+  display: none;
 }
 .entry-card-wrap {
   border-bottom: 1px solid #ccdde6;
