@@ -312,6 +312,53 @@ a:hover {
   margin:0 auto 12px!important;
 }
 
+/* Share button */
+.sns-share, .sns-follow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.sns-share-buttons {
+  width: 20%;
+}
+@media screen and (max-width: 834px) {
+  .sns-share-buttons {
+    width: 40%;
+  }
+}
+.sns-buttons a {
+  background-color: #fff;
+  color: #5b6266;
+}
+.sns-buttons a:hover {
+  color: #5b6266;
+}
+@media screen and (max-width: 834px) {
+  .ss-top .sns-share-buttons a, .ss-bottom .sns-share-buttons a {
+    font-size: 1.5em;
+  }
+}
+.sns-share-buttons a {
+  flex-direction: column;
+}
+.ss-top .sns-share-buttons a:not(:last-of-type) .button-caption,
+.ss-bottom .sns-share-buttons a:not(:last-of-type) .button-caption {
+  display: none;
+}
+.ss-top .sns-share-buttons a .button-caption,
+.ss-bottom .sns-share-buttons a .button-caption {
+  font-size: 0.4em;
+  white-space: nowrap;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.sns-share-message, .sns-follow-message {
+  margin: 0 0.5555em 0 0;
+}
+
 /* Footer */
 .footer-bottom {
   margin-top: 0;
