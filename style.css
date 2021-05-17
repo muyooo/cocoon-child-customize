@@ -154,8 +154,15 @@ a:hover {
 
 /* Header */
 .logo-image {
-  padding: 60px 0;
+  padding: 1.25em 0;
   line-height: 1;
+  margin-bottom: 2.777em;
+  border-bottom: 1px solid #ccdde6;
+}
+@media screen and (max-width: 480px) {
+  .site-name-text {
+    width: 40%;
+  }
 }
 .content {
   margin-top: 0;
