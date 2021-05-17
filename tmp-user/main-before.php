@@ -9,57 +9,60 @@
     <h2 class="analyze-cat-title">Contents</h2>
     <ul class="analyze-cat analyze-cat--hide">
     <?php foreach( $categories as $category ) : ?>
-      <?php
-        // カテゴリー情報の取得とリンクの作成
-        $categoryDetail = get_category($category->term_id);
-        $categoryCounts = array_merge_recursive(
-          $categoryCounts,
-          [
-            'count' => $categoryDetail->count,
-            'slug' => $categoryDetail->slug
-          ]
-        );
-        $categoryURL = get_site_url() . '/category/' . $categoryDetail->slug . '/';
-        $categoryUniqueClass = $categoryClass . '--' . $categoryDetail->slug;
-      ?>
-      <li class="analyze-cat-list">
-        <a
-          href="<?= esc_attr( $categoryURL ); ?>" 
-          class="
-            <?= esc_attr( $categoryClass . ' ' ); ?>
-            <?= esc_attr( $categoryUniqueClass . ' ' ); ?>
-            <?= esc_attr( $moveStopClass ); ?>">
-          <div class="analyze-cat-image">
-            <img src="<?= esc_attr( get_site_url() . '/wp-content/uploads/icon_' . $categoryDetail->slug . '.png'); ?>" class="analyze-cat-icon">
-          </div>
-          <span class="analyze-cat-headline analyze-cat-headline--<?= esc_attr( $categoryDetail->slug );?>">
-            <?= esc_attr( $categoryDetail->name ); ?><br>
-          </span>
-        </a>
-
+      <?php if ($category->parent === 0): ?>
         <?php
-          // 最近のカテゴリー記事の取得と表示
-          $categoryRecentPosts = get_posts( array(
-            'category_name' => $categoryDetail->slug,
-            'posts_per_page' => 3 
-          ));
-          if ($categoryRecentPosts) :
+          // カテゴリー情報の取得とリンクの作成
+          
+            $categoryDetail = get_category($category->term_id);
+            $categoryCounts = array_merge_recursive(
+              $categoryCounts,
+              [
+                'count' => $categoryDetail->count,
+                'slug' => $categoryDetail->slug
+              ]
+            );
+            $categoryURL = get_site_url() . '/category/' . $categoryDetail->slug . '/';
+            $categoryUniqueClass = $categoryClass . '--' . $categoryDetail->slug;
         ?>
-        <ul class="cat-recent-posts">
-          <?php foreach ( $categoryRecentPosts as $post ) : ?>
-            <?php setup_postdata( $post );?>
-            <li class="cat-recent-post" title="<?php the_title(); ?>">
-              <span class="cat-recent-post-date"><?php the_time( 'Y.n.j' ); ?></span><br>
-              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-            </li>
-          <?php endforeach ?>
-        </ul>
-        <a href="<?= esc_attr( $categoryURL ); ?>" class="analyze-cat-link">
-          <span class="fa fa-chevron-down" aria-hidden="true"></span>
-        </a>
-        <?php endif; ?>
-      </li>
-      <?php endforeach; ?>
+        <li class="analyze-cat-list">
+          <a
+            href="<?= esc_attr( $categoryURL ); ?>" 
+            class="
+              <?= esc_attr( $categoryClass . ' ' ); ?>
+              <?= esc_attr( $categoryUniqueClass . ' ' ); ?>
+              <?= esc_attr( $moveStopClass ); ?>">
+            <div class="analyze-cat-image">
+              <img src="<?= esc_attr( get_site_url() . '/wp-content/uploads/icon_' . $categoryDetail->slug . '.png'); ?>" class="analyze-cat-icon">
+            </div>
+            <span class="analyze-cat-headline analyze-cat-headline--<?= esc_attr( $categoryDetail->slug );?>">
+              <?= esc_attr( $categoryDetail->name ); ?><br>
+            </span>
+          </a>
+          
+          <?php
+            // 最近のカテゴリー記事の取得と表示
+            $categoryRecentPosts = get_posts( array(
+              'category_name' => $categoryDetail->slug,
+              'posts_per_page' => 3 
+            ));
+            if ($categoryRecentPosts) :
+          ?>
+          <ul class="cat-recent-posts">
+            <?php foreach ( $categoryRecentPosts as $post ) : ?>
+              <?php setup_postdata( $post );?>
+              <li class="cat-recent-post" title="<?php the_title(); ?>">
+                <span class="cat-recent-post-date"><?php the_time( 'Y.n.j' ); ?></span><br>
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+              </li>
+            <?php endforeach ?>
+          </ul>
+          <a href="<?= esc_attr( $categoryURL ); ?>" class="analyze-cat-link">
+            <span class="fa fa-chevron-down" aria-hidden="true"></span>
+          </a>
+          <?php endif; ?>
+        </li>
+      <?php endif; ?>
+    <?php endforeach; ?>
 
       <style type="text/css">
         <?php

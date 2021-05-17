@@ -80,7 +80,7 @@ a:hover {
   right: 0;
   margin: 0 auto;
   z-index: 1;
-  font-size: 0.9375em;
+  font-size: 0.875em;
   line-height: 1;
 }
 .analyze-cat-headline::after{
