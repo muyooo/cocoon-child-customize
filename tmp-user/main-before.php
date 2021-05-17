@@ -29,6 +29,9 @@
             <?= esc_attr( $categoryClass . ' ' ); ?>
             <?= esc_attr( $categoryUniqueClass . ' ' ); ?>
             <?= esc_attr( $moveStopClass ); ?>">
+          <div class="analyze-cat-image">
+            <img src="<?= esc_attr( get_site_url() . '/wp-content/uploads/icon_' . $categoryDetail->slug . '.png'); ?>" class="analyze-cat-icon">
+          </div>
           <span class="analyze-cat-headline analyze-cat-headline--<?= esc_attr( $categoryDetail->slug );?>">
             <?= esc_attr( $categoryDetail->name ); ?><br>
           </span>
