@@ -315,6 +315,13 @@ a:hover {
   margin:0 auto 12px!important;
 }
 
+/* Category link */
+.cat-link {
+  border: 1px solid #f8b500;
+  color: #f8b500;
+  background-color: #fff;
+}
+
 /* Share button */
 .sns-share, .sns-follow {
   display: flex;
