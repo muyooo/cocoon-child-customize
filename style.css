@@ -308,6 +308,9 @@ a:hover {
 }
 
 /* Article */
+.article {
+  border-bottom: 1px solid #ccdde6;
+}
 .instagram-media {
   margin:0 auto 12px!important;
 }
