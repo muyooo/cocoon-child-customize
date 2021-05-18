@@ -384,6 +384,27 @@ a:hover {
   border-right: 1px solid #ccdde6;
 }
 
+/* Related */
+.related-entry-heading {
+  font-size: 1.3888em;
+  color: #043c78;
+  margin: 1.5em 0 .5em;
+  padding-bottom: 0;
+  line-height: 1;
+  text-align: center;
+}
+.related-entries {
+  border-bottom: 1px solid #ccdde6;
+  padding: 0 1.5em;
+}
+.rect-mini-card .related-entry-card-wrap {
+  padding: 6% 0;
+  margin-bottom: 0;
+}
+.rect-mini-card .related-entry-card-wrap:not(:last-of-type) {
+  border-bottom: 1px solid #ccdde6;
+}
+
 /* Footer */
 .footer-bottom {
   margin-top: 0;
