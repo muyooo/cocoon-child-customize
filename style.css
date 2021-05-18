@@ -385,6 +385,22 @@ table tr:nth-of-type(2n+1) {
 .instagram-media {
   margin:0 auto 12px!important;
 }
+div.speech-balloon,
+.speech-icon img,
+.speech-icon amp-img {
+  border: 2px solid #ccdde6;
+}
+.speech-balloon::before {
+  border-right-color: #ccdde6;
+}
+@media screen and (max-width: 480px) {
+  .speech-wrap .speech-balloon {
+    padding: 7px 12px;
+  }
+  .speech-wrap .speech-balloon::after {
+    left: -4px;
+  }
+}
 
 /* Category link */
 .cat-link {
