@@ -348,25 +348,40 @@ a:hover {
     font-size: 1.5em;
   }
 }
-.sns-share-buttons a {
-  flex-direction: column;
-}
 .ss-top .sns-share-buttons a:not(:last-of-type) .button-caption,
 .ss-bottom .sns-share-buttons a:not(:last-of-type) .button-caption {
   display: none;
 }
 .ss-top .sns-share-buttons a .button-caption,
 .ss-bottom .sns-share-buttons a .button-caption {
-  font-size: 0.4em;
+  font-size: 0.4em!important;
   white-space: nowrap;
   position: absolute;
-  top: 35px;
+  top: 32px;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
+.sns-share.ss-high-and-low-lc a .social-icon,
+  .sns-share.ss-high-and-low-cl a .social-icon,
+  .sns-sharess-high-and-low-lc a .button-caption,
+  .sns-share.ss-high-and-low-cl a .button-caption {
+    font-size: 1.1em;
+  }
+@media screen and (max-width: 1023px){
+  .sns-share.ss-high-and-low-lc a .social-icon,
+  .sns-share.ss-high-and-low-cl a .social-icon,
+  .sns-sharess-high-and-low-lc a .button-caption,
+  .sns-share.ss-high-and-low-cl a .button-caption {
+    font-size: .9em;
+  }
+}
 .sns-share-message, .sns-follow-message {
+  font-size: 0.7777em;
+  font-weight: 700;
   margin: 0 0.5555em 0 0;
+  padding-right: 1em;
+  border-right: 1px solid #ccdde6;
 }
 
 /* Footer */
