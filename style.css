@@ -367,6 +367,9 @@ a:hover {
 .toc a {
   color: #5b6266;
 }
+figure.wp-block-table.aligncenter table {
+  width: 100%;
+}
 .instagram-media {
   margin:0 auto 12px!important;
 }
