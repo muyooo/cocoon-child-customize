@@ -6,7 +6,7 @@
     $moveStopClass = 'analyze-cat-stop';
   ?>
   <section class="add-contents wrap">
-    <h2 class="analyze-cat-title">Contents</h2>
+    <h2 class="analyze-cat-title">コンテンツ</h2>
     <ul class="analyze-cat analyze-cat--hide">
     <?php foreach( $categories as $category ) : ?>
       <?php if ($category->parent === 0): ?>
