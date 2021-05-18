@@ -385,6 +385,9 @@ table tr:nth-of-type(2n+1) {
 .instagram-media {
   margin:0 auto 12px!important;
 }
+.video-container, .instagram-container, .facebook-container {
+  margin: 30px auto;
+}
 div.speech-balloon,
 .speech-icon img,
 .speech-icon amp-img {
