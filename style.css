@@ -311,6 +311,45 @@ a:hover {
 .article {
   border-bottom: 1px solid #ccdde6;
 }
+.article-header {
+  border-bottom: 1px solid #ccdde6;
+}
+.entry-title {
+  padding: 0;
+}
+@media screen and (max-width: 480px) {
+  .entry-title{
+    font-size: 1.375em;
+  }
+}
+.article h2 {
+  background-color: #fff;
+  position: relative;
+  padding: .2em 0 .2em 1.3em;
+  margin-top: 3.6em;
+}
+.article h2::before,
+.article h2::after {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+.article h2::before {
+  top: .25em;
+  left: 0;
+  background-color: #f8b500;
+}
+.article h2::after {
+  top: -.1em;
+  left: -.3em;
+  background-color: #fff;
+}
+.article h3 {
+  border: none;
+  padding: 0;
+}
 .instagram-media {
   margin:0 auto 12px!important;
 }
