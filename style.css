@@ -350,6 +350,20 @@ a:hover {
   border: none;
   padding: 0;
 }
+.toc {
+  border: 1px solid #ccdde6;
+  width: 80%;
+}
+.toc-title::after,
+.toc-checkbox:checked+.toc-title::after {
+  color: #ccdde6;
+  font-weight: bold;
+  text-decoration: none;
+}
+.toc-title,
+.toc a {
+  color: #5b6266;
+}
 .instagram-media {
   margin:0 auto 12px!important;
 }
