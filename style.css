@@ -446,9 +446,19 @@ div.speech-balloon,
   border: 1px solid #f8b500;
   color: #f8b500;
   background-color: #fff;
+  padding: 6px;
 }
 .cat-link:hover {
   color: #f8b500;
+}
+.cat-link .fa-folder {
+  display: none;
+}
+.entry-categories-tags {
+  line-height: 1;
+}
+.entry-categories-tags > div {
+  margin-bottom: 0;
 }
 
 /* Share button */
@@ -456,6 +466,7 @@ div.speech-balloon,
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin: 0 0 24px;
 }
 .sns-share-buttons {
   width: 20%;
