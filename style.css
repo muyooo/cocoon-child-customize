@@ -428,7 +428,7 @@ div.speech-balloon,
 }
 @media screen and (max-width: 834px) {
   .sns-share-buttons {
-    width: 40%;
+    width: 50%;
   }
 }
 .sns-buttons a {
