@@ -208,7 +208,7 @@ a:hover {
 
 /* Article List */
 .wrap {
-  width: 60%;
+  width: 50%;
 }
 @media screen and (max-width: 834px){
   .wrap {
@@ -247,6 +247,17 @@ a:hover {
 .entry-card-wrap.a-wrap {
   padding: 0 0 5%;
   margin-bottom: 6%;
+}
+.entry-card-thumb {
+  width: 25%;
+}
+@media screen and (max-width: 1282px) {
+  .entry-card-thumb {
+    width: 38%;
+  }
+}
+.entry-card-content {
+  margin-left: 28%;
 }
 .entry-card-thumb, .widget-entry-card-thumb, .related-entry-card-thumb, .carousel-entry-card-thumb {
   margin-top: 0;
