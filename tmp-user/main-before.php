@@ -37,30 +37,8 @@
             <span class="analyze-cat-headline analyze-cat-headline--<?= esc_attr( $categoryDetail->slug );?>">
               <?= esc_attr( $categoryDetail->name ); ?><br>
             </span>
+            <span class="fa fa-chevron-down analyze-cat-arrow" aria-hidden="true"></span>
           </a>
-          
-          <?php
-            // 最近のカテゴリー記事の取得と表示
-            $categoryRecentPosts = get_posts( array(
-              'category_name' => $categoryDetail->slug,
-              'posts_per_page' => 3 
-            ));
-            if ($categoryRecentPosts) :
-          ?>
-          <h3 class="cat-recent-title">人気記事</h3>
-          <ul class="cat-recent-posts">
-            <?php foreach ( $categoryRecentPosts as $post ) : ?>
-              <?php setup_postdata( $post );?>
-              <li class="cat-recent-post" title="<?php the_title(); ?>">
-                <span class="cat-recent-post-date"><?php the_time( 'Y.n.j' ); ?></span><br>
-                <a href="<?php the_permalink(); ?>" class="cat-recent-post-link"><?php the_title(); ?></a>
-              </li>
-            <?php endforeach ?>
-          </ul>
-          <a href="<?= esc_attr( $categoryURL ); ?>" class="analyze-cat-link">
-            <span class="fa fa-chevron-down" aria-hidden="true"></span>
-          </a>
-          <?php endif; ?>
         </li>
       <?php endif; ?>
     <?php endforeach; ?>

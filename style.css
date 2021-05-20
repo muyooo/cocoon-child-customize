@@ -53,6 +53,12 @@ a:hover {
   opacity: 1;
   transition: .8s;
 }
+@media screen and (max-width: 834px){
+  .analyze-cat {
+    height: 110px;
+    margin-bottom: 2.7777em;
+  }
+}
 .analyze-cat--hide {
   opacity: 0;
 }
@@ -60,7 +66,6 @@ a:hover {
   list-style: none;
   position: relative;
   width: 25%;
-  overflow: hidden;
 }
 @media screen and (max-width: 1023px){
   .analyze-cat-list {
@@ -162,49 +167,61 @@ a:hover {
   opacity: .7;
   transition: .2s;
 }
-.cat-recent-title {
-  font-size: .72222em;
+.analyze-cat-arrow {
+  display: block;
+  font-size: 0.8333em;
+  text-align: center;
+  color: #f8b500;
+  margin-top: 0.6666em;
+}
+.popular-entry-card-thumb {
+  display: none;
+}
+.widget-entry-card-content {
+  margin-left: 0;
+}
+.popular-entry-card-link {
+  color: #7a99cf;
+}
+.cat-popular-posts {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0 auto 1.66666em;
+}
+@media screen and (max-width: 834px){
+  .cat-popular-posts {
+    display: none;
+  }
+}
+.cat-popular-post {
+  list-style: none;
+  width: 25%;
+}
+.cat-popular-title {
+  font-size: .83333em;
   text-align: center;
   line-height: 1;
   color: #043c78;
-  margin-top: 1.153846em;
+  margin: 1.153846em 0 .576923em;
 }
-@media screen and (max-width: 1023px){
-  .cat-recent-title {
+@media screen and (max-width: 834px){
+  .cat-popular-title {
     display: none;
   }
 }
-.cat-recent-posts {
-  padding: 0;
-  list-style: none;
-  margin-top: .27777em;
-}
-@media screen and (max-width: 1023px){
-  .cat-recent-posts {
-    display: none;
-  }
-}
-.cat-recent-post {
-  font-size: .666667em;
+.widget-entry-card {
+  font-size: .72222em;
   line-height: 1.4;
-  margin-bottom: .83333em;
 }
-.cat-recent-post-date {
-  font-size: .74em;
-}
-.cat-recent-post-link {
+.popular-entry-card-title {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   text-overflow: ellipsis;
   overflow: hidden;
   height: 2.6em;
-}
-.analyze-cat-link {
-  display: block;
-  font-size: 0.833em;
-  text-align: center;
-  color: #f8b500;
 }
 
 /* Header */
