@@ -317,6 +317,9 @@ a:hover {
 .archive-title + .search-box {
   margin-bottom: 2.2222em;
 }
+.archive-title + .widget_text {
+  display: none;
+}
 .entry-card-wrap {
   border-bottom: 1px solid #ccdde6;
 }
