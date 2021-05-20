@@ -36,16 +36,22 @@ a:hover {
 
 /* Analyze Category - Add contents */
 .analyze-cat-title {
-  font-size: 1.3888em;
+  font-size: 1.388888em;
   color: #043c78;
-  margin: 0 1.25em 6%;
+  margin: 0 1.25em .8em;
   padding-bottom: 0;
   line-height: 1;
   text-align: center;
 }
+@media screen and (max-width: 480px){
+  .analyze-cat-title {
+    margin-bottom: 6%;
+  }
+}
 .analyze-cat {
   width: 90%;
-  margin: 0 auto 2.777em;
+  height: 135px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -229,14 +235,25 @@ a:hover {
   width: 100%;
 }
 .logo-image {
-  padding: 1.25em 0 .8em;
+  padding: .83333em 0 .55555em;;
   line-height: 1;
+}
+@media screen and (max-width: 480px){
+  .logo-image {
+    padding: 1.25em 0 .8em;
+  }
 }
 .tagline{
   line-height: 1.2;
-  margin: 0 0 2.777em;
-  padding-bottom: 1.6666em;
+  margin: 0 0 2.142857em;
+  padding-bottom: 1.42857em;
   border-bottom: 1px solid #ccdde6;
+}
+@media screen and (max-width: 480px){
+  .tagline{
+    margin-bottom: 3.3333em;
+    padding-bottom: 1.6666em;
+  }
 }
 .site-name-text {
   width: 40%;
@@ -266,7 +283,7 @@ a:hover {
 
 /* Article List */
 .wrap {
-  width: 50%;
+  width: 75%;
 }
 @media screen and (max-width: 834px){
   .wrap {
@@ -292,6 +309,7 @@ a:hover {
   color: #043c78;
   line-height: 1;
   text-align: center;
+  margin-top: 0;
 }
 .archive-title > span {
   display: none;
