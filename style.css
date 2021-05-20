@@ -307,10 +307,10 @@ a:hover {
   margin: 0;
 }
 .pagination a:hover {
-  color: #f8b500;
+  color: #7a99cf;
   background-color: #fff;
-  transition: all 0.2s ease-in-out;
-  border: 1px solid #f8b500;
+  transition: all .3s ease-in-out;
+  opacity: .7;
 }
 .page-numbers {
   font-size: .5555em;
