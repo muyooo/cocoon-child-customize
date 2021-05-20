@@ -47,12 +47,13 @@
             ));
             if ($categoryRecentPosts) :
           ?>
+          <h3 class="cat-recent-title">人気記事</h3>
           <ul class="cat-recent-posts">
             <?php foreach ( $categoryRecentPosts as $post ) : ?>
               <?php setup_postdata( $post );?>
               <li class="cat-recent-post" title="<?php the_title(); ?>">
                 <span class="cat-recent-post-date"><?php the_time( 'Y.n.j' ); ?></span><br>
-                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                <a href="<?php the_permalink(); ?>" class="cat-recent-post-link"><?php the_title(); ?></a>
               </li>
             <?php endforeach ?>
           </ul>
