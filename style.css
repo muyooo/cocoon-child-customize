@@ -409,8 +409,13 @@ a:hover {
   transition: .3s;
   text-decoration: none;
 }
-figure.wp-block-table.aligncenter table {
-  width: 100%;
+figure.wp-block-table table {
+  width: 80%;
+}
+@media screen and (max-width: 480px){
+  figure.wp-block-table table {
+    width: 100%;
+  }
 }
 table th, table td {
   border: 1px solid #ccdde6;
