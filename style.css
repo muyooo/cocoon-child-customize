@@ -347,11 +347,15 @@ a:hover {
     font-size: 1.375em;
   }
 }
+.article h1 {
+  color: #043c78;
+}
 .article h2 {
   background-color: #fff;
   position: relative;
   padding: .2em 0 .2em 1.3em;
   margin-top: 3.6em;
+  color: #043c78;
 }
 .article h2::before,
 .article h2::after {
@@ -374,6 +378,8 @@ a:hover {
 .article h3 {
   border: none;
   padding: 0;
+  margin-top: 3em;
+  color: #043c78;
 }
 .article h2 + h3 {
   margin-top: 1.2em;
