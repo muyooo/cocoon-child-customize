@@ -74,4 +74,13 @@
   <div class="search-cat-image">
     <img src="<?= get_icon_url( get_current_slug() ); ?>" class="search-cat-icon">
   </div>
+  <link rel="stylesheet" href="../category.css">
+  <style type="text/css">
+    @media screen and (max-width: 480px){
+      .cat-popular-post--<?= get_current_slug(); ?> {
+        width: 100%;
+        display: block;
+      }
+    }
+  </style>
 <?php endif; ?>

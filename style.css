@@ -203,7 +203,7 @@ a:hover {
 }
 .cat-popular-post {
   list-style: none;
-  width: 25%;
+  width: 28%;
 }
 .cat-popular-title {
   font-size: .83333em;
@@ -323,9 +323,6 @@ a:hover {
 .archive-title + .search-box {
   margin-bottom: 2.2222em;
 }
-.archive-title + .widget_text {
-  display: none;
-}
 .entry-card-wrap {
   border-bottom: 1px solid #ccdde6;
 }
@@ -436,7 +433,7 @@ a:hover {
 /* Search Category */
 .search-cat-image {
   width: 6%;
-  margin: 0 auto .55555em;
+  margin: 0 auto .27777em;
 }
 @media screen and (max-width: 834px) {
   .search-cat-image {

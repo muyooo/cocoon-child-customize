@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.widget_text {
+  display: none;
+}
+.cat-popular-post--guitar,
+.cat-popular-post--research,
+.cat-popular-post--develop {
+  display: none;
+}
+@media screen and (max-width: 480px){
+  .widget_text {
+    display: block;
+  }
+  .archive-title {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccdde6;
+  }
+  .cat-popular-title {
+    display: block;
+    font-size: 1.125em;
+    margin-top: 1.11111em;
+  }
+  .cat-popular-posts {
+    width: 100%;
+    display: block;
+    margin-bottom: 1.11111em;
+  }
+  .popular-entry-card-title {
+    font-size: 1.125em;
+    font-weight: bold;
+    height: auto;
+  }
+}
