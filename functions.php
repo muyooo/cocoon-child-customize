@@ -16,3 +16,16 @@ function get_current_slug() {
 function get_icon_url($slug) {
   return esc_attr( get_site_url() . '/wp-content/uploads/icon_' . $slug . '.png');
 }
+function get_category_url($slug) {
+  return esc_attr( get_site_url() . '/category/' . $slug . '/' );
+}
+function get_analyze_move_stop_class() {
+  $moveStopClass = 'analyze-cat-stop';
+  return esc_attr( $moveStopClass );
+}
+function get_analyze_cat_ratio_class() {
+  return esc_attr( 'analyze-cat-ratio' );
+}
+function get_analyze_cat_ratio_unique_class($slug) {
+  return rtrim( get_analyze_cat_ratio_class() ) . '--' . $slug;
+}
