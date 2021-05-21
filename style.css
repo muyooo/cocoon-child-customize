@@ -20,6 +20,9 @@ Version:    1.1.2
     padding: 0 1.25em;
   }
 }
+::marker {
+  color: #b6babd;
+}
 a {
   color: #7a99cf;
 }
