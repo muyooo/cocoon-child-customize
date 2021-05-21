@@ -189,6 +189,9 @@ a:hover {
 .popular-entry-card-link {
   color: #7a99cf;
 }
+.search-box + .widget_text {
+  display: none;
+}
 .cat-popular-posts {
   width: 90%;
   display: flex;
