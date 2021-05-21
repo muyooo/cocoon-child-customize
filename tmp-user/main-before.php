@@ -70,4 +70,8 @@
       </style>
     </ul>
   </section>
+<?php elseif(is_category()) : ?>
+  <div class="search-cat-image">
+    <img src="<?= get_icon_url( get_current_slug() ); ?>" class="search-cat-icon">
+  </div>
 <?php endif; ?>

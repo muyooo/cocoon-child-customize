@@ -433,6 +433,22 @@ a:hover {
   display: none;
 }
 
+/* Search Category */
+.search-cat-image {
+  width: 6%;
+  margin: 0 auto .55555em;
+}
+@media screen and (max-width: 834px) {
+  .search-cat-image {
+    width: 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .search-cat-image {
+    width: 15%;
+  }
+}
+
 /* Article */
 .article {
   border-bottom: 1px solid #ccdde6;
