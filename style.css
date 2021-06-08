@@ -479,27 +479,20 @@ a:hover {
 .article h2 {
   background-color: #fff;
   position: relative;
-  padding: .2em 0 .2em 1.3em;
+  padding: .2em 0 .2em .7em;
   margin-top: 3.6em;
   color: #043c78;
 }
-.article h2::before,
-.article h2::after {
+.article h2::before {
   content: "";
   position: absolute;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
+  width: 5px;
+  height: 100%;
 }
 .article h2::before {
-  top: .25em;
+  top: 0;
   left: 0;
   background-color: #f8b500;
-}
-.article h2::after {
-  top: -.1em;
-  left: -.3em;
-  background-color: #fff;
 }
 .article h3 {
   border: none;
