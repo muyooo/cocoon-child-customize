@@ -36,6 +36,9 @@ a:hover {
   opacity: .5;
   transition: .3s;
 }
+.card-thumb img {
+  border: 1px solid #ccdde6;
+}
 
 /* Analyze Category - Add contents */
 .analyze-cat-title {
