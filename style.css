@@ -464,6 +464,12 @@ a:hover {
 /* Article */
 .article {
   border-bottom: 1px solid #ccdde6;
+  margin: 0 8%;
+}
+@media screen and (max-width: 1023px) {
+  .article {
+    margin: 0;
+  }
 }
 .article-header {
   border-bottom: 1px solid #ccdde6;
@@ -672,6 +678,12 @@ div.speech-balloon,
 .related-entries {
   border-bottom: 1px solid #ccdde6;
   padding: 0 1.5em;
+  margin: 0 8%;
+}
+@media screen and (max-width: 1023px) {
+  .related-entries {
+    margin: 0;
+  }
 }
 .rect-mini-card .related-entry-card-wrap {
   padding: 6% 0;
@@ -699,6 +711,22 @@ div.speech-balloon,
 /* Footer */
 .footer-bottom {
   margin-top: 0;
+}
+.breadcrumb + .footer .footer-bottom {
+  margin: 0 8%;
+}
+@media screen and (max-width: 1023px) {
+  .breadcrumb + .footer .footer-bottom {
+    margin: 0;
+  }
+}
+.breadcrumb.sbp-main-before, .breadcrumb.sbp-footer-before, .breadcrumb.pbp-main-before, .breadcrumb.pbp-footer-before {
+  padding: .6em 6%;
+}
+@media screen and (max-width: 1023px) {
+  .breadcrumb.sbp-main-before, .breadcrumb.sbp-footer-before, .breadcrumb.pbp-main-before, .breadcrumb.pbp-footer-before {
+    padding: .6em 1em;
+  }
 }
 .navi-footer-in > .menu-footer {
   margin-bottom: 0.5555em;
