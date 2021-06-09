@@ -532,7 +532,7 @@ a:hover {
   text-decoration: none;
 }
 figure.wp-block-table table {
-  width: 80%;
+  width: 90%;
 }
 @media screen and (max-width: 480px){
   figure.wp-block-table table {
