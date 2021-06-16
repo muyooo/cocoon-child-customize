@@ -308,7 +308,7 @@ a:hover {
   }
 }
 .list {
-  padding-top: 0.55555em;
+  padding-top: 1.111111em;
   margin-top: 0.55555em;
   border-top: 1px solid #ccdde6;
 }
@@ -316,6 +316,14 @@ a:hover {
   .list {
     padding-top: 6%;
     margin-top: 4.5%;
+  }
+}
+.entry-card {
+  margin-bottom: .666666em;
+}
+@media screen and (max-width: 480px){
+  .entry-card {
+    margin-bottom: 0;
   }
 }
 .widget h2.widget-list-title,
@@ -337,7 +345,7 @@ a:hover {
 }
 .entry-card-wrap.a-wrap {
   padding: 0;
-  margin-bottom: 0.55555em;
+  margin-bottom: 1.111111em;
 }
 @media screen and (max-width: 480px){
   .entry-card-wrap.a-wrap {
