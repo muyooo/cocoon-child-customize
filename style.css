@@ -545,6 +545,9 @@ figure.wp-block-table table {
     width: 100%;
   }
 }
+.wp-block-table.aligncenter figcaption {
+  text-align: center;
+}
 table th, table td {
   border: 1px solid #ccdde6;
 }
