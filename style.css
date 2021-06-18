@@ -524,6 +524,11 @@ a:hover {
   border: 1px solid #ccdde6;
   width: 80%;
 }
+@media screen and (max-width: 480px) {
+  .toc {
+    width: 100%;
+  }
+}
 .toc-title::after,
 .toc-checkbox:checked+.toc-title::after {
   color: #7a99cf;
