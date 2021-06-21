@@ -42,7 +42,7 @@
         <?php
           // カテゴリー比率の計算と設定
           $categoryArticleCountSum = array_sum($categoryCounts['count']);
-          $categoryRatioValue = round(100 / $categoryArticleCountSum, 1);
+          $categoryRatioValue = floorX(100 / $categoryArticleCountSum, 1);
           $i = 0;
           for($i; $i < count($categoryCounts['slug']); $i++) {
             $targetRatio = $categoryRatioValue * $categoryCounts['count'][$i];

@@ -36,3 +36,10 @@ function get_analyze_cat_ratio_unique_class($slug)
 {
   return rtrim( get_analyze_cat_ratio_class() ) . '--' . $slug;
 }
+function floorX (float $val, ?int $x = null): float
+{
+  if (null == $x) return floor($val);
+  if ($x < 0) throw new \RuntimeException('Invalid x');
+  $tmp = $val - 0.5 / (10 ** $x);
+  return round($tmp, $x, $tmp > 0 ? PHP_ROUND_HALF_UP : PHP_ROUND_HALF_DOWN);
+}
