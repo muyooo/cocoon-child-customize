@@ -777,6 +777,14 @@ div.speech-balloon,
   margin-bottom: 3px;
 }
 
+/* Adsense */
+.ad-area {
+  margin-top: 1.5em;
+}
+.ad-label {
+  font-size: 12px;
+}
+
 /************************************
 ** レスポンシブデザイン用のメディアクエリ
 ************************************/

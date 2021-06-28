@@ -6,3 +6,4 @@
 /tmp-user/*
 !/tmp-user/head-insert.php
 !/tmp-user/main-before.php
+/ads.txt
