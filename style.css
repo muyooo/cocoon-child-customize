@@ -595,6 +595,9 @@ div.speech-balloon,
     left: -4px;
   }
 }
+.twitter-tweet {
+  margin: 10px auto;
+}
 
 /* Category link */
 .cat-link {
