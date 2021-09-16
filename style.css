@@ -779,11 +779,15 @@ div.speech-balloon,
 
 /* Adsense */
 .ad-area {
-  margin-top: 1.5em;
+  margin: 1.5em 8% 0;
 }
 .ad-label {
   font-size: 12px;
 }
+.adsbygoogle ins {
+  width: 100%!important;
+}
+
 
 /************************************
 ** レスポンシブデザイン用のメディアクエリ
