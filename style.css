@@ -791,6 +791,35 @@ div.speech-balloon,
   width: 100%!important;
 }
 
+/* Affiliate */
+.booklink-box, .kaerebalink-box, .tomarebalink-box, .product-item-box {
+  border: none;
+  background-color: #fafcfc;
+  width: 100%;
+}
+.shoplinkamazon > a {
+  background: #fff;
+  border: 1px solid #f79901;
+  color: #f79901;
+}
+.shoplinkrakuten > a {
+  background: #fff;
+  border: 1px solid #bf0000;
+  color: #bf0000;
+}
+.shoplinkyahoo > a {
+  background: #fff;
+  border: 1px solid #e60033;
+  color: #e60033;
+}
+.shoplinkbtn > a {
+  background: #fff;
+  border: 1px solid #5b6266;
+  color: #5b6266;
+}
+.product-item-buttons div:first-of-type {
+  margin-left: 0;
+}
 
 /************************************
 ** レスポンシブデザイン用のメディアクエリ
