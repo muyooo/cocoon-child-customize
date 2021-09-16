@@ -797,25 +797,19 @@ div.speech-balloon,
   background-color: #fafcfc;
   width: 100%;
 }
-.shoplinkamazon > a {
-  background: #fff;
-  border: 1px solid #f79901;
-  color: #f79901;
+.product-item-title-link {
+  color: #f8b500;
 }
-.shoplinkrakuten > a {
-  background: #fff;
-  border: 1px solid #bf0000;
-  color: #bf0000;
+.product-item-title-link:hover {
+  color: #f8b500;
 }
-.shoplinkyahoo > a {
-  background: #fff;
-  border: 1px solid #e60033;
-  color: #e60033;
-}
+.shoplinkamazon > a,
+.shoplinkrakuten > a,
+.shoplinkyahoo > a,
 .shoplinkbtn > a {
   background: #fff;
-  border: 1px solid #5b6266;
-  color: #5b6266;
+  border: 1px solid #7a99cf;
+  color: #7a99cf;
 }
 .product-item-buttons div:first-of-type {
   margin-left: 0;
