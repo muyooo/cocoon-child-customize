@@ -4,8 +4,8 @@
   display: none;
 }
 .cat-popular-post--guitar,
-.cat-popular-post--research,
-.cat-popular-post--develop {
+.cat-popular-post--game,
+.cat-popular-post--editing {
   display: none;
 }
 @media screen and (max-width: 480px){
