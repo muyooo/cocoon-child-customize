@@ -782,6 +782,9 @@ div.speech-balloon,
 
 /* Adsense */
 .ad-area {
+  margin: 1.5em 0;
+}
+.under-entry-content .ad-area {
   margin: 1.5em 8% 0;
 }
 .ad-label {
