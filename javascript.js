@@ -3,8 +3,8 @@
 //JavaScriptやjQueryで親テーマのjavascript.jsに加えて関数を記入したい時に使用します。
 'use strict';
 
-window.addEventListener('load', () => {
   const addContents = document.querySelector('.add-contents');
+window.addEventListener('DOMContentLoaded', () => {
   if (addContents != null) {
     setTimeout(() => {
       const analyzeList = document.querySelector('.analyze-cat');
