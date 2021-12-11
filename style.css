@@ -747,7 +747,7 @@ div.speech-balloon,
 .wpcf7 input[type='submit'] {
   width: 60%;
   display: block;
-  margin: 0 auto;
+  margin: 4rem auto 0;
   font-weight: bold;
   color: #7a99cf;
   background-color: #fff;
@@ -760,7 +760,7 @@ div.speech-balloon,
   }
 }
 .wpcf7 form .wpcf7-response-output {
-  margin: 2em 0 1em!important;
+  margin: 1em 0!important;
   padding: 0!important;
   border: none!important;
   text-align: center;
