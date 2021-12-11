@@ -288,6 +288,7 @@ a:hover {
   color: #6d767b;
   border-radius: 18px;
   border-color: #ccdde6;
+  outline: none;
 }
 
 /* Article List */
