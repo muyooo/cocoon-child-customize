@@ -71,7 +71,8 @@
   </div>
   <style type="text/css">
     @media screen and (max-width: 480px){
-      .cat-popular-post--<?= get_current_slug(); ?> {
+      .cat-popular-post--<?= get_current_slug(); ?>,
+      .cat-recommend-post--<?= get_current_slug(); ?> {
         width: 100%;
         display: block;
       }

@@ -5,7 +5,10 @@
 }
 .cat-popular-post--guitar,
 .cat-popular-post--game,
-.cat-popular-post--editing {
+.cat-popular-post--editing,
+.cat-recommend-post--guitar,
+.cat-recommend-post--game,
+.cat-recommend-post--editing {
   display: none;
 }
 @media screen and (max-width: 480px){
@@ -18,13 +21,23 @@
   }
   .cat-popular-title {
     display: block;
-    font-size: 1.125em;
-    margin-top: 1.11111em;
+    font-size: 1.125rem;
   }
-  .cat-popular-posts {
+  .cat-recommend-title {
+    display: block;
+    font-size: .8333rem;
+  }
+  .cat-popular-title {
+    margin-top: 1.11111rem;
+  }
+  .cat-popular-posts,
+  .cat-recommend-posts {
     width: 100%;
     display: block;
-    margin-bottom: 1.11111em;
+    margin-bottom: 0;
+  }
+  #custom_html-4 {
+    margin-bottom: 0;
   }
   .popular-entry-card-title {
     font-size: 1.125em;
