@@ -238,6 +238,9 @@ a:hover {
   overflow: hidden;
   height: 2.6em;
 }
+.blogcard, .ecb-entry-border .entry-card-wrap, .page-numbers, .pagination-next-link, .comment-btn, .index-tab-buttons .index-tab-button, .border-square a, .author-box {
+  border-color: #ccdde6;
+}
 
 /* Header */
 .header-in.wrap {
