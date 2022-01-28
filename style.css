@@ -649,6 +649,26 @@ div.speech-balloon,
 .twitter-tweet {
   margin: 10px auto;
 }
+a.wp-block-button__link {
+  font-size: 1rem;
+  color: #f8b500!important;
+  background: #fff;
+  border-radius: 0;
+  border: 1px solid #f8b500;
+  position: relative;
+  padding: 0.5rem 2.5rem 0.5rem 2rem;
+  line-height: 1.5;
+}
+a.wp-block-button__link::after {
+  content: "\f054";
+  font-size: .75rem;
+  font-family: FontAwesome;
+  color: #f8b500;
+  position: absolute;
+  top: 50%;
+  right: 0.625rem;
+  transform: translateY(-50%);
+}
 
 /* Category link */
 .cat-link {
