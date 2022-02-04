@@ -954,6 +954,35 @@ a.wp-block-button__link::after {
   margin-left: 0;
 }
 
+/* Walkthrough Article */
+.hidden-walkthrough {
+  display: none;
+}
+.hidden-walkthrough--opened {
+  display: block;
+}
+.open-walkthrough-button {
+  appearance: none;
+  border: 1px solid #ccdde6;
+  color: #7a99cf;
+  font-weight: bold;
+  background-color: #fff;
+  padding: .375rem 2rem .375rem 1rem;
+  position: relative;
+}
+.open-walkthrough-button::after {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free", FontAwesome;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  right: .625rem;
+  transform: translateY(-50%);
+}
+.open-walkthrough-button.open-walkthrough-button--opened::after {
+  content: "\f077";
+}
+
 /************************************
 ** レスポンシブデザイン用のメディアクエリ
 ************************************/
