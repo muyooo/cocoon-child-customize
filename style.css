@@ -953,6 +953,19 @@ a.wp-block-button__link::after {
 .product-item-buttons div:first-of-type {
   margin-left: 0;
 }
+.m-amazon-link {
+  background-color: #fafcfc;
+  display: flex;
+  padding: 1.375rem 1.5625rem;
+  line-height: 1.5;
+  color: #f8b500;
+}
+.m-amazon-link:hover {
+  color: #f8b500;
+}
+.m-amazon-link img {
+  margin-right: 1.5625rem;
+}
 
 /* Walkthrough Article */
 .hidden-walkthrough {
