@@ -573,12 +573,7 @@ a:hover {
 }
 .toc {
   border: 1px solid #ccdde6;
-  width: 80%;
-}
-@media screen and (max-width: 480px) {
-  .toc {
-    width: 100%;
-  }
+  width: 100%;
 }
 .toc-title::after,
 .toc-checkbox:checked+.toc-title::after {
@@ -602,12 +597,7 @@ a:hover {
   text-decoration: none;
 }
 figure.wp-block-table table {
-  width: 90%;
-}
-@media screen and (max-width: 480px){
-  figure.wp-block-table table {
-    width: 100%;
-  }
+  width: 100%;
 }
 .wp-block-table.aligncenter figcaption {
   text-align: center;
