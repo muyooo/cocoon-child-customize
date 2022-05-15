@@ -679,6 +679,9 @@ a.wp-block-button__link::after {
 .entry-categories-tags > div {
   margin-bottom: 0;
 }
+.blogcard-wrap {
+  width: 100%;
+}
 
 /* Share button */
 .sns-share, .sns-follow {
