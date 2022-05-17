@@ -186,7 +186,7 @@ a:hover {
   color: #f8b500;
   margin-top: 0.6666em;
 }
-.popular-entry-card-thumb {
+.cat-popular-posts .popular-entry-card-thumb {
   display: none;
 }
 .widget-entry-card-content {
@@ -273,11 +273,11 @@ a:hover {
   display: block;
   line-height: 1.4;
 }
-.widget-entry-card {
+.cat-popular-posts .widget-entry-card {
   font-size: .72222em;
   line-height: 1.4;
 }
-.popular-entry-card-title {
+.cat-popular-posts .popular-entry-card-title {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -287,6 +287,12 @@ a:hover {
 }
 .blogcard, .ecb-entry-border .entry-card-wrap, .page-numbers, .pagination-next-link, .comment-btn, .index-tab-buttons .index-tab-button, .border-square a, .author-box {
   border-color: #ccdde6;
+}
+article.article .widget-entry-cards .a-wrap {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #fafcfc;
+  border: none;
 }
 
 /* Header */
