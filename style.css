@@ -291,7 +291,7 @@ a:hover {
 article.article .widget-entry-cards .a-wrap {
   margin-bottom: 1rem;
   padding: 1rem;
-  background-color: #fafcfc;
+  background-color: #f7fbfe;
   border: none;
 }
 
@@ -618,7 +618,7 @@ table td:last-of-type {
   width: 65%;
 }
 table tr:nth-of-type(2n+1) {
-  background-color: #fafcfc;
+  background-color: #f7fbfe;
 }
 .instagram-media {
   margin:0 auto 12px!important;
@@ -932,7 +932,7 @@ a.wp-block-button__link::after {
 /* Affiliate */
 .booklink-box, .kaerebalink-box, .tomarebalink-box, .product-item-box {
   border: none;
-  background-color: #fafcfc;
+  background-color: #f7fbfe;
   width: 100%;
 }
 .product-item-title-link {
@@ -953,7 +953,7 @@ a.wp-block-button__link::after {
   margin-left: 0;
 }
 .m-amazon-link {
-  background-color: #fafcfc;
+  background-color: #f7fbfe;
   display: flex;
   padding: 1.375rem 1.5625rem;
   line-height: 1.5;
