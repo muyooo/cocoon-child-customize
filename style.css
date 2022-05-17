@@ -39,6 +39,16 @@ a:hover {
 .card-thumb img {
   border: 1px solid #ccdde6;
 }
+blockquote {
+  background-color: #f7fbfe;
+  border-color: #ccdde6;
+}
+blockquote cite {
+  font-size: .5em;
+}
+.wp-block-quote p {
+  margin-bottom: 1em;
+}
 
 /* Analyze Category - Add contents */
 .analyze-cat-title {
