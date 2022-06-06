@@ -50,6 +50,23 @@ blockquote cite {
   margin-bottom: 1em;
 }
 
+/* Blogcard */
+.blogcard-site {
+  display: none;
+}
+.blogcard-snippet {
+  display: none;
+}
+.blogcard-date {
+  font-size: .75rem;
+}
+.blogcard-thumbnail img {
+  border: 1px solid #ccdde6;
+}
+.blogcard-footer {
+  padding-top: 0;
+}
+
 /* Analyze Category - Add contents */
 .analyze-cat-title {
   font-size: 1.388888em;
