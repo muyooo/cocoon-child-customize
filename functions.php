@@ -19,9 +19,16 @@ function get_icon_url($slug)
 {
   return esc_attr( get_site_url() . '/wp-content/uploads/icon_' . $slug . '.png');
 }
+function get_page_url($slug)
+{
+  return esc_attr( get_site_url() . '/' . $slug . '/' );
+}
 function get_category_url($slug)
 {
   return esc_attr( get_site_url() . '/category/' . $slug . '/' );
+}
+function get_category_description($id) {;
+  return nl2br( strip_tags( category_description($id) ) );
 }
 function get_analyze_move_stop_class()
 {

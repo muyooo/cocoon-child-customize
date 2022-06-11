@@ -7,8 +7,12 @@ window.addEventListener('DOMContentLoaded', () => {
   var addContents = document.querySelector('.add-contents');
   if (addContents != null) {
     setTimeout(() => {
-      var analyzeList = document.querySelector('.analyze-cat');
-      analyzeList.classList.remove('analyze-cat--hide');
+      var analyzeList = document.querySelectorAll('.analyze-cat');
+      var analyzeListLen = analyzeList.length;
+      var i = 0;
+      for (i; i < analyzeListLen; i++) {
+        analyzeList[i].classList.remove('analyze-cat--hide');
+      }
     }, 50);
 
     setTimeout(() => {
