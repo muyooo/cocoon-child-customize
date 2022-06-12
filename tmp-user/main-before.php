@@ -7,7 +7,7 @@
     <h2 class="analyze-cat-title">“編集”を学ぼう</h2>
     <ul class="analyze-cat analyze-cat--hide">
     <?php foreach( $categories as $category ) : ?>
-      <?php if ($category->parent === 26): ?>
+      <?php if ($category->parent === 23): ?>
         <?php
           // カテゴリー情報の取得とリンクの作成
             $categoryDetail = get_category($category->term_id);
@@ -44,7 +44,7 @@
     <h2 class="analyze-cat-title analyze-cat-title--topline">“むょー”のおすすめ</h2>
     <ul class="analyze-cat analyze-cat--hide">
     <?php foreach( $categories as $category ) : ?>
-      <?php if ($category->parent === 27): ?>
+      <?php if ($category->parent === 22): ?>
         <?php
           // カテゴリー情報の取得とリンクの作成
             $categoryDetail = get_category($category->term_id);

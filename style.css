@@ -104,17 +104,6 @@ blockquote cite {
   padding: 0;
   opacity: 1;
   transition: .8s;
-  padding: 0 10rem;
-}
-@media screen and (max-width: 1256px){
-  .analyze-cat {
-    padding: 0 5rem;
-  }
-}
-@media screen and (max-width: 1023px){
-  .analyze-cat {
-    padding: 0;
-  }
 }
 .analyze-cat--hide {
   opacity: 0;
@@ -122,9 +111,14 @@ blockquote cite {
 .analyze-cat-list {
   list-style: none;
   position: relative;
-  width: 33.33%;
+  width: 20%;
   height: 10.75rem;
   margin-bottom: 0.625rem;
+}
+@media screen and (max-width: 834px){
+  .analyze-cat-list {
+    width: 33.33%;
+  }
 }
 @media screen and (max-width: 480px){
   .analyze-cat-list {
@@ -134,8 +128,8 @@ blockquote cite {
 }
 .analyze-cat-list-editing { order: 1;}
 .analyze-cat-list-writing { order: 2;}
-.analyze-cat-list-web { order: 3;}
-.analyze-cat-list-analyze { order: 4;}
+.analyze-cat-list-interview { order: 3;}
+.analyze-cat-list-web { order: 4;}
 .analyze-cat-list-adobe { order: 5;}
 .analyze-cat-image {
   position: absolute;
