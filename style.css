@@ -843,6 +843,10 @@ a.wp-block-button__link::after {
   }
 }
 
+/* Page */
+.page .date-tags {
+  display: none;
+}
 /* Breadcrumb */
 .breadcrumb a {
   color: #7a99cf;
