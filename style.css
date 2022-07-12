@@ -847,6 +847,23 @@ a.wp-block-button__link::after {
 .page .date-tags {
   display: none;
 }
+.page .article h1::before {
+  content: "";
+  width: 1.75rem;
+  height: 1.75rem;
+  display: inline-block;
+  background-size: contain;
+  vertical-align: middle;
+}
+.page-id-1128 .article h1::before {background-image: url("https://muyooo.com/wp-content/uploads/icon_portfolio.png");}
+.page-id-1513 .article h1::before {background-image: url("https://muyooo.com/wp-content/uploads/icon_adobe.png");}
+.page-id-1481 .article h1::before {background-image: url("https://muyooo.com/wp-content/uploads/icon_book.png");}
+.page-id-1542 .article h1::before {background-image: url("https://muyooo.com/wp-content/uploads/icon_interview.png");}
+.page-id-1325 .article h1::before {background-image: url("https://muyooo.com/wp-content/uploads/icon_guitar.png");}
+.page-id-1492 .article h1::before {background-image: url("https://muyooo.com/wp-content/uploads/icon_web.png");}
+.page-id-1508 .article h1::before {background-image: url("https://muyooo.com/wp-content/uploads/icon_editing.png");}
+.page-id-1518 .article h1::before {background-image: url("https://muyooo.com/wp-content/uploads/icon_writing.png");}
+
 /* Breadcrumb */
 .breadcrumb a {
   color: #7a99cf;
