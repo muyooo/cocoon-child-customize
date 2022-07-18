@@ -51,6 +51,11 @@ blockquote cite {
 }
 
 /* Blogcard */
+.blogcard {
+  border: 1px solid #ccdde6;
+  border-radius: .25rem;
+  padding: 1rem;
+}
 .blogcard-site {
   display: none;
 }
@@ -65,6 +70,25 @@ blockquote cite {
 }
 .blogcard-footer {
   padding-top: 0;
+}
+.blogcard-title {
+  font-size: 1rem;
+  color: #5b6266;
+}
+.blogcard-thumbnail,
+.widget-entry-cards figure {
+  width: 10rem;
+}
+article.article .widget-entry-cards .a-wrap {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccdde6;
+  border-radius: .25rem;
+  line-height: 1.6;
+}
+.popular-entry-card-link {
+  color: #5b6266;
+  font-weight: bold;
 }
 
 /* Analyze Category - Add contents */
@@ -251,9 +275,6 @@ blockquote cite {
 .widget-entry-card-content {
   margin-left: 0;
 }
-.popular-entry-card-link {
-  color: #7a99cf;
-}
 .search-box + .widget_text {
   display: none;
 }
@@ -346,12 +367,6 @@ blockquote cite {
 }
 .blogcard, .ecb-entry-border .entry-card-wrap, .page-numbers, .pagination-next-link, .comment-btn, .index-tab-buttons .index-tab-button, .border-square a, .author-box {
   border-color: #ccdde6;
-}
-article.article .widget-entry-cards .a-wrap {
-  margin-bottom: 1rem;
-  padding: 1rem;
-  background-color: #f7fbfe;
-  border: none;
 }
 
 /* Header */
