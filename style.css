@@ -540,7 +540,7 @@ article.article .widget-entry-cards .a-wrap {
 .e-card-info > span {
   margin-right: 0;
 }
-.post-date > span {
+.post-date > span.fa {
   display: none;
 }
 .ect-3-columns .entry-card-wrap {
