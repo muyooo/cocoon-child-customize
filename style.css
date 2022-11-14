@@ -114,7 +114,6 @@ article.article .widget-entry-cards .a-wrap {
 .new-article-headline {
   margin: 0 0 0.8em;
   padding-top: 2.5rem;
-  border-top: 1px solid #ccdde6;
 }
 .content .list {
   margin-top: 0;
@@ -1023,9 +1022,13 @@ a.wp-block-button__link::after {
 }
 .ad-label {
   font-size: 12px;
+  text-align: center;
 }
 .adsbygoogle ins {
   width: 100%!important;
+}
+.add-contents .ad-label {
+  margin-top: 1.25rem;
 }
 
 /* Affiliate */
