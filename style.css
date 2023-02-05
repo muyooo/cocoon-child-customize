@@ -738,6 +738,18 @@ a.wp-block-button__link::after {
   right: 0.625rem;
   transform: translateY(-50%);
 }
+/* post-date */
+.entry-title + .eye-catch-wrap + .date-tags {
+  margin-top: -12px;
+}
+@media screen and (max-width: 480px) {
+  .entry-title + .eye-catch-wrap + .date-tags {
+    margin-top: 0;
+  }
+}
+.post-date, .post-update, .post-author, .amp-back {
+  margin-right: 0;
+}
 
 /* Category link */
 .cat-link {
