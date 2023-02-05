@@ -1046,36 +1046,26 @@ a.wp-block-button__link::after {
 /* Affiliate */
 .booklink-box, .kaerebalink-box, .tomarebalink-box, .product-item-box {
   border: none;
-  background-color: #f7fbfe;
+  background-color: #fef8e6;
   width: 100%;
-}
-.product-item-title-link {
-  color: #f8b500;
-}
-.product-item-title-link:hover {
-  color: #f8b500;
 }
 .shoplinkamazon > a,
 .shoplinkrakuten > a,
 .shoplinkyahoo > a,
 .shoplinkbtn > a {
   background: #fff;
-  border: 1px solid #7a99cf;
-  color: #7a99cf;
+  border: 1px solid #f8b500;
+  color: #f8b500;
 }
 .product-item-buttons div:first-of-type {
   margin-left: 0;
 }
 .m-amazon-link {
-  background-color: #f7fbfe;
+  background-color: #fef8e6;
   display: flex;
   padding: 1.375rem 1.5625rem;
   line-height: 1.5;
-  color: #f8b500;
   text-decoration: none;
-}
-.m-amazon-link:hover {
-  color: #f8b500;
 }
 .m-amazon-link img {
   margin-right: 1.5625rem;
