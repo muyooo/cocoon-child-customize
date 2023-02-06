@@ -988,6 +988,18 @@ a.wp-block-button__link::after {
     border-left: 1px solid #fff;
   }
 }
+@media screen and (max-width: 480px) {
+  .navi-footer-in > .menu-footer li.menu-item {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #fff;
+    padding: 1.125em 0;
+  }
+  .navi-footer-in > .menu-footer li.menu-item:first-of-type {
+    border-left: none;
+    padding: 0 0 1.125em;
+  }
+}
 .navi-footer-in > .menu-footer li.menu-item a {
   line-height: 1.2;
 }
