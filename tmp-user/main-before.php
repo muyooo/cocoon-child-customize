@@ -94,7 +94,7 @@
       <?php
         // カテゴリー比率の計算と設定
         $categoryArticleCountSum = array_sum($categoryCounts['count']);
-        $categoryRatioValue = floorX(100 / $categoryArticleCountSum, 1);
+        $categoryRatioValue = 100 / $categoryArticleCountSum;
         $i = 0;
         for($i; $i < count($categoryCounts['slug']); $i++) {
           $targetRatio = $categoryRatioValue * $categoryCounts['count'][$i];
@@ -110,7 +110,7 @@
             echo $targetMoveClass . ':hover::before {background-color: #f8b500;transition: 0s;}';
           }
           $categoryHeadline = '.analyze-cat-headline--' . $categoryCounts['slug'][$i];
-          echo $categoryHeadline . '::after{content:"' . $targetRatio . '%"}';
+          echo $categoryHeadline . '::after{content:"' . round($targetRatio, 1) . '%"}';
         }
       ?>
       .analyze-cat-stop::before{transform: rotate(0deg);}
