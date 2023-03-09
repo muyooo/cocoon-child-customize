@@ -635,17 +635,29 @@ article.article .widget-entry-cards .a-wrap {
   position: absolute;
   width: 5px;
   height: 100%;
-}
-.article h2::before {
   top: 0;
   left: 0;
   background-color: #f8b500;
 }
 .article h3 {
   border: none;
-  padding: 0;
+  position: relative;
+  padding: 0 0 0 .7em;
   margin-top: 3em;
   color: #043c78;
+}
+.article h3::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-top: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #f8b500;
 }
 .article h2 + h3 {
   margin-top: 1.2em;
