@@ -41,7 +41,7 @@
       <?php endif; ?>
     <?php endforeach; ?>
     </ul>
-    <h2 class="analyze-cat-title analyze-cat-title--topline">“河村六四”の足跡</h2>
+    <h2 class="analyze-cat-title analyze-cat-title--topline">好きなこと・やったこと</h2>
     <ul class="analyze-cat analyze-cat--hide">
     <?php foreach( $categories as $category ) : ?>
       <?php if ($category->parent === 22): ?>
