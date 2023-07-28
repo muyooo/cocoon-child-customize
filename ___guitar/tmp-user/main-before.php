@@ -4,10 +4,10 @@
     $categoryCounts = [];
   ?>
   <section class="add-contents wrap">
-    <h2 class="analyze-cat-title">実務で学んだ“編集”知識</h2>
+    <h2 class="analyze-cat-title">Guitar Contents</h2>
     <ul class="analyze-cat analyze-cat--hide">
     <?php foreach( $categories as $category ) : ?>
-      <?php if ($category->parent === 23): ?>
+      <?php if ($category->parent === 1): ?>
         <?php
           // カテゴリー情報の取得とリンクの作成
             $categoryDetail = get_category($category->term_id);
@@ -20,43 +20,6 @@
             );
         ?>
         <li class="analyze-cat-list analyze-cat-list-<?= esc_attr( $categoryDetail->slug ) ?>">
-          <a
-            href="<?= get_page_url( $categoryDetail->slug ); ?>" 
-            class="
-              <?= get_analyze_cat_ratio_class(); ?> 
-              <?= get_analyze_cat_ratio_unique_class( $categoryDetail->slug ); ?> 
-              <?= get_analyze_move_stop_class(); ?>">
-            <div class="analyze-cat-image">
-              <img src="<?= get_icon_url( $categoryDetail->slug ); ?>" class="analyze-cat-icon">
-            </div>
-            <span class="analyze-cat-headline analyze-cat-headline--<?= esc_attr( $categoryDetail->slug );?>">
-              <?= esc_attr( $categoryDetail->name ); ?><br>
-            </span>
-            <p class="analyze-cat-desc">
-              <?= get_category_description($categoryDetail->term_id); ?>
-            </p>
-            <span class="fa fa-chevron-down analyze-cat-arrow" aria-hidden="true"></span>
-          </a>
-        </li>
-      <?php endif; ?>
-    <?php endforeach; ?>
-    </ul>
-    <h2 class="analyze-cat-title analyze-cat-title--topline">好きなこと・やったこと</h2>
-    <ul class="analyze-cat analyze-cat--hide">
-    <?php foreach( $categories as $category ) : ?>
-      <?php if ($category->parent === 22): ?>
-        <?php
-          // カテゴリー情報の取得とリンクの作成
-            $categoryDetail = get_category($category->term_id);
-            $categoryCounts = array_merge_recursive(
-              $categoryCounts,
-              [
-                'count' => $categoryDetail->count,
-                'slug' => $categoryDetail->slug
-              ]
-            );
-        ?>
-        <li class="analyze-cat-list">
           <a
             href="<?= get_page_url( $categoryDetail->slug ); ?>" 
             class="
@@ -104,7 +67,7 @@
       .analyze-cat-stop::before{transform: rotate(0deg);}
     </style>
   </section>
-  <h2 class="new-article-headline">新着記事</h2>
+  <h2 class="new-article-headline">New</h2>
 <?php elseif(is_category()) : ?>
   <div class="search-cat-image">
     <img src="<?= get_icon_url( get_current_slug() ); ?>" class="search-cat-icon">
