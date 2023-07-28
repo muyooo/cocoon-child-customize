@@ -78,18 +78,6 @@
       <?php endif; ?>
     <?php endforeach; ?>
     </ul>
-    <div class="ad-label" itemprop="name" data-nosnippet="">スポンサーリンク</div>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- muyooo.com ad -->
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-8959537944225967"
-        data-ad-slot="3743194221"
-        data-ad-format="horizontal"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
     <style type="text/css">
       <?php
         // カテゴリー比率の計算と設定
