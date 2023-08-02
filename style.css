@@ -154,6 +154,8 @@ article.article .widget-entry-cards .a-wrap {
 .analyze-cat-list-interview { order: 3;}
 .analyze-cat-list-web { order: 4;}
 .analyze-cat-list-adobe { order: 5;}
+.analyze-cat-list-tab {order:1; }
+.analyze-cat-list-original {order:2; }
 .analyze-cat-image {
   position: absolute;
   top: 14%;
@@ -1002,14 +1004,14 @@ a.wp-block-button__link::after {
 }
 @media screen and (max-width: 480px) {
   .navi-footer-in > .menu-footer li.menu-item {
-    width: 100%;
+    width: 46%;
     border-right: none;
     border-bottom: 1px solid #fff;
-    padding: 1.125em 0;
+    padding: 0 0 0.9375em;
+    margin: 0.9375em 2% 0;
   }
   .navi-footer-in > .menu-footer li.menu-item:first-of-type {
     border-left: none;
-    padding: 0 0 1.125em;
   }
 }
 .navi-footer-in > .menu-footer li.menu-item a {
