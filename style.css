@@ -49,6 +49,20 @@ blockquote cite {
 .wp-block-quote p {
   margin-bottom: 1em;
 }
+.grecaptcha-badge {
+  visibility: hidden;
+}
+.grecaptcha-caption {
+  font-size: .75rem;
+  color: #999999;
+  margin-bottom: 0!important;
+}
+.wp-block-contact-form-7-contact-form-selector {
+  margin-bottom: 0;
+}
+#post-775 .entry-content.cf {
+  margin-bottom: 0.625rem;
+}
 
 /* Blogcard */
 .blogcard {
