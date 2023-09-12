@@ -50,10 +50,10 @@ function floorX (float $val, ?int $x = null): float
   $tmp = $val - 0.5 / (10 ** $x);
   return round($tmp, $x, $tmp > 0 ? PHP_ROUND_HALF_UP : PHP_ROUND_HALF_DOWN);
 }
+//リダイレクト用設定
 add_action( 'get_header', 'specific_url_redirect' );
 function specific_url_redirect(){
-	$url = $_SERVER['REQUEST_URI']; //現在のページのURLを取得
-	//URLに「redirect-page」という文字列が含まれていたらリダイレクト
+	$url = $_SERVER['REQUEST_URI'];
 	if(strstr($url,'/220116-rokumonsen')){
 		wp_redirect( 'https://guitar.muyooo.com/rokumonsen/', 301 );
 		exit;
