@@ -53,35 +53,35 @@ function floorX (float $val, ?int $x = null): float
 //リダイレクト用設定
 add_action( 'get_header', 'specific_url_redirect' );
 function specific_url_redirect(){
-	$url = $_SERVER['REQUEST_URI'];
-	if(strstr($url,'/220116-rokumonsen')){
-		wp_redirect( 'https://guitar.muyooo.com/rokumonsen/', 301 );
-		exit;
-	}
-	if(strstr($url,'/reprogram')){
-		wp_redirect( 'https://guitar.muyooo.com/reprogram/', 301 );
-		exit;
-	}
-	if(strstr($url,'/gatherthelights-full')){
-		wp_redirect( 'https://guitar.muyooo.com/gatherthelights-full/', 301 );
-		exit;
-	}
-	if(strstr($url,'/caffeine')){
-		wp_redirect( 'https://guitar.muyooo.com/caffeine/', 301 );
-		exit;
-	}
-	if(strstr($url,'/ahiru')){
-		wp_redirect( 'https://guitar.muyooo.com/ahiru/', 301 );
-		exit;
-	}
-	if(strstr($url,'/vivi')){
-		wp_redirect( 'https://guitar.muyooo.com/vivi/', 301 );
-		exit;
-	}
-	if(strstr($url,'/stratocaster-seaside')){
+  $url = $_SERVER['REQUEST_URI'];
+  if(strstr($url,'/220116-rokumonsen')){
+    wp_redirect( 'https://guitar.muyooo.com/rokumonsen/', 301 );
+    exit;
+  }
+  if(strstr($url,'/reprogram')){
+    wp_redirect( 'https://guitar.muyooo.com/reprogram/', 301 );
+    exit;
+  }
+  if(strstr($url,'/gatherthelights-full')){
+    wp_redirect( 'https://guitar.muyooo.com/gatherthelights-full/', 301 );
+    exit;
+  }
+  if(strstr($url,'/caffeine')){
+    wp_redirect( 'https://guitar.muyooo.com/caffeine/', 301 );
+    exit;
+  }
+  if(strstr($url,'/ahiru')){
+    wp_redirect( 'https://guitar.muyooo.com/ahiru/', 301 );
+    exit;
+  }
+  if(strstr($url,'/vivi')){
+    wp_redirect( 'https://guitar.muyooo.com/vivi/', 301 );
+    exit;
+  }
+  if(strstr($url,'/stratocaster-seaside')){
     wp_redirect( 'https://guitar.muyooo.com/stratocaster-seaside/', 301 );
-		exit;
-	}
+    exit;
+  }
   if(strstr($url,'/thebungy')){
     wp_redirect( 'https://guitar.muyooo.com/thebungy/', 301 );
     exit;
