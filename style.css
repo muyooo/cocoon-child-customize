@@ -400,13 +400,25 @@ article.article .widget-entry-cards .a-wrap {
 .tagline {
   line-height: 1.2;
   margin: 0 0 1.5625rem;
-  padding-bottom: 1.42857em;
-  border-bottom: 1px solid #ccdde6;
 }
 @media screen and (max-width: 480px){
   .tagline {
     margin-bottom: 1.5625rem;
-    padding-bottom: 1.25rem;
+  }
+}
+.tagline::after {
+  content: "当ブログではアフィリエイト広告を利用しています";
+  display: block;
+  border: 1px solid #ccdde6;
+  border-right: none;
+  border-left: none;
+  color: #7a99cf;
+  margin: 0.5rem auto 1.42857em;
+  padding: 0.3125rem 0;
+}
+@media screen and (max-width: 480px){
+  .tagline::after {
+    margin-bottom: 1.25rem;
   }
 }
 .site-name-text {
