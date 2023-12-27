@@ -1160,6 +1160,15 @@ a.wp-block-button__link::after {
   content: "\f077";
 }
 
+/* Font Awesome */
+.fa-inpost {
+  color: #f8b500;
+  margin: 0 auto;
+  font-size: 4.375rem;
+  /* line-height: .03125em;
+  vertical-align: -0.1875em; */
+}
+
 /************************************
 ** レスポンシブデザイン用のメディアクエリ
 ************************************/
