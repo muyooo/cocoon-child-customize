@@ -690,6 +690,23 @@ article.article .widget-entry-cards .a-wrap {
 .article h2 + h3 {
   margin-top: 1.2em;
 }
+.article h4::before {
+  content: "";
+  width: 1.5rem;
+  height: 2px;
+  background-color: #f8b500;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.article h4 {
+  border: none;
+  padding: 0 0 0 1.875rem;
+  font-size: 1rem;
+  color: #043c78;
+  position: relative;
+}
 .toc {
   border: 1px solid #ccdde6;
   width: 100%;
@@ -751,7 +768,7 @@ div.speech-balloon,
   border-left-color: #ccdde6!important;
 }
 .speech-wrap .speech-balloon {
-  color: #7a99cf;
+  color: #043c78;
 }
 @media screen and (max-width: 480px) {
   .speech-wrap .speech-balloon {
