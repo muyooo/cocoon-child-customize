@@ -650,6 +650,7 @@ article.article .widget-entry-cards .a-wrap {
 }
 .article h1 {
   color: #043c78;
+  line-height: 1.4;
 }
 .article h2 {
   background-color: #fff;
@@ -657,6 +658,7 @@ article.article .widget-entry-cards .a-wrap {
   padding: .2em 0 .2em .7em;
   margin-top: 3.6em;
   color: #043c78;
+  line-height: 1.4;
 }
 .article h2::before {
   content: "";
@@ -673,6 +675,7 @@ article.article .widget-entry-cards .a-wrap {
   padding: 0 0 0 .7em;
   margin-top: 3em;
   color: #043c78;
+  line-height: 1.4;
 }
 .article h3::before {
   content: "";
@@ -706,6 +709,7 @@ article.article .widget-entry-cards .a-wrap {
   font-size: 1rem;
   color: #043c78;
   position: relative;
+  line-height: 1.4;
 }
 .toc {
   border: 1px solid #ccdde6;
