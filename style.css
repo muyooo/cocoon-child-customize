@@ -275,6 +275,7 @@ article.article .widget-entry-cards .a-wrap {
   text-align: center;
   line-height: 1.4;
   margin-top: .5rem;
+  font-feature-settings: "palt";
 }
 @media screen and (max-width: 834px){
   .analyze-cat-desc {
