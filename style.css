@@ -287,6 +287,13 @@ article.article .widget-entry-cards .a-wrap {
 .widget-entry-card-content {
   margin-left: 0;
 }
+@media screen and (max-width: 480px){
+  .popular-entry-card-title, 
+  .widget-entry-card-title {
+    max-height: 6.125rem;
+    overflow: hidden;
+  }
+}
 .search-box + .widget_text {
   display: none;
 }
