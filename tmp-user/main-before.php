@@ -4,7 +4,7 @@
     $categoryCounts = [];
   ?>
   <section class="add-contents wrap">
-    <h2 class="analyze-cat-title">実務で学んだ“編集”知識</h2>
+    <h2 class="analyze-cat-title">実務で学んだ備忘録</h2>
     <ul class="analyze-cat analyze-cat--hide">
     <?php foreach( $categories as $category ) : ?>
       <?php if ($category->parent === 23): ?>
