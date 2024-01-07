@@ -393,6 +393,21 @@ article.article .widget-entry-cards .a-wrap {
 .blogcard, .ecb-entry-border .entry-card-wrap, .page-numbers, .pagination-next-link, .comment-btn, .index-tab-buttons .index-tab-button, .border-square a, .author-box {
   border-color: #ccdde6;
 }
+.add-contents-button {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.add-contents-button a.wp-block-button__link {
+  padding: 0.5rem 2.5rem 0.5rem 3.25rem;
+}
+.add-contents-button a.wp-block-button__link img {
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  top: 50%;
+  left: 1.75rem;
+  transform: translateY(-50%);
+}
 
 /* Header */
 .header-in.wrap {

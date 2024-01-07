@@ -4,7 +4,7 @@
     $categoryCounts = [];
   ?>
   <section class="add-contents wrap">
-    <h2 class="analyze-cat-title">実務で学んだ経験まとめ</h2>
+    <h2 class="analyze-cat-title">実務で学んだ知識・テクニック</h2>
     <ul class="analyze-cat analyze-cat--hide">
     <?php foreach( $categories as $category ) : ?>
       <?php if ($category->parent === 23): ?>
@@ -56,7 +56,7 @@
               ]
             );
         ?>
-        <li class="analyze-cat-list">
+        <li class="analyze-cat-list analyze-cat-list-<?= esc_attr( $categoryDetail->slug ) ?>">
           <a
             href="<?= get_page_url( $categoryDetail->slug ); ?>" 
             class="
@@ -78,6 +78,9 @@
       <?php endif; ?>
     <?php endforeach; ?>
     </ul>
+    <div class="wp-block-button add-contents-button">
+      <a class="wp-block-button__link wp-element-button" href="https://muyooo.com/about/"><img src="https://muyooo.com/wp-content/uploads/icon_muyooo.png" alt="著者アイコン">運営者のプロフィールはこちら</a>
+    </div>
     <div class="ad-label" itemprop="name" data-nosnippet="">スポンサーリンク</div>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- muyooo.com ad -->
