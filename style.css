@@ -46,8 +46,12 @@ blockquote {
 blockquote cite {
   font-size: .5em;
 }
+.wp-block-quote {
+  line-height: 0.8;
+}
 .wp-block-quote p {
   margin-bottom: 1em;
+  line-height: 1.4;
 }
 .grecaptcha-badge {
   visibility: hidden;
