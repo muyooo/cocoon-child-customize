@@ -167,10 +167,11 @@ article.article .widget-entry-cards .a-wrap {
     width: 30%;
   }
 }
-.analyze-cat-list-web { order: 1;}
-.analyze-cat-list-interview { order: 2;}
-.analyze-cat-list-tab {order:1; }
-.analyze-cat-list-original {order:2; }
+.analyze-cat-list-web { order: 1; }
+.analyze-cat-list-interview { order: 2; }
+.analyze-cat-list-web { order: 1; }
+.analyze-cat-list-book { order: 2; }
+.analyze-cat-list-column { order: 3; }
 .analyze-cat-image {
   position: absolute;
   top: 14%;
