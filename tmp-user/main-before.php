@@ -4,71 +4,51 @@
     $categoryCounts = [];
   ?>
   <section class="add-contents wrap">
-    <h2 class="analyze-cat-title">実務で学んだ知識・テクニック</h2>
-    <ul class="analyze-cat analyze-cat--hide">
-    <?php foreach( $categories as $category ) : ?>
-      <?php if ($category->parent === 23): ?>
-        <?php
-          // カテゴリー情報の取得とリンクの作成
-            $categoryDetail = get_category($category->term_id);
-            $categoryCounts = array_merge_recursive(
-              $categoryCounts,
-              [
-                'count' => $categoryDetail->count,
-                'slug' => $categoryDetail->slug
-              ]
-            );
-        ?>
-        <li class="analyze-cat-list analyze-cat-list-<?= esc_attr( $categoryDetail->slug ) ?>">
-          <a
-            href="<?= get_page_url( $categoryDetail->slug ); ?>" 
-            class="
-              <?= get_analyze_cat_ratio_class(); ?> 
-              <?= get_analyze_cat_ratio_unique_class( $categoryDetail->slug ); ?> 
-              <?= get_analyze_move_stop_class(); ?>">
-            <div class="analyze-cat-image">
-              <img src="<?= get_icon_url( $categoryDetail->slug ); ?>" class="analyze-cat-icon">
-            </div>
-            <span class="analyze-cat-headline analyze-cat-headline--<?= esc_attr( $categoryDetail->slug );?>">
-              <?= esc_attr( $categoryDetail->name ); ?><br>
-            </span>
-            <p class="analyze-cat-desc">
-              <?= get_category_description($categoryDetail->term_id); ?>
-            </p>
-            <span class="fa fa-chevron-down analyze-cat-arrow" aria-hidden="true"></span>
-          </a>
-        </li>
-      <?php endif; ?>
-    <?php endforeach; ?>
+    <h2 class="contents-title">コンテンツ</h2>
+    <ul class="contents-cat">
+      <li class="contents-cat-list">
+        <a
+          href="https://muyooo.com/free-icon/" 
+          class="contents-cat-link">
+          <div class="contents-cat-image">
+            <img src="https://muyooo.com/wp-content/uploads/icon_import.png" class="contents-cat-icon">
+          </div>
+          <span class="contents-cat-headline">
+            FileMaker用<br>フリーアイコン<br>
+          </span>
+          <span class="fa fa-chevron-down contents-cat-arrow" aria-hidden="true"></span>
+        </a>
+      </li>
+      <li class="contents-cat-list">
+        <a
+          href="https://muyooo.com/filemaker/" 
+          class="contents-cat-link">
+          <div class="contents-cat-image">
+            <img src="https://muyooo.com/wp-content/uploads/icon_note.png" class="contents-cat-icon">
+          </div>
+          <span class="contents-cat-headline">
+            FileMaker<br>脱初心者への道<br>
+          </span>
+          <span class="fa fa-chevron-down contents-cat-arrow" aria-hidden="true"></span>
+        </a>
+      </li>
+      <li class="contents-cat-list">
+        <a
+          href="https://muyooo.com/portfolio/" 
+          class="contents-cat-link">
+          <div class="contents-cat-image">
+            <img src="https://muyooo.com/wp-content/uploads/icon_fileOutline.png" class="contents-cat-icon">
+          </div>
+          <span class="contents-cat-headline">
+            ポートフォリオ<br>（制作物）<br>
+          </span>
+          <span class="fa fa-chevron-down contents-cat-arrow" aria-hidden="true"></span>
+        </a>
+      </li>
     </ul>
     <div class="wp-block-button add-contents-button">
-      <a class="wp-block-button__link wp-element-button" href="https://muyooo.com/about/"><img src="https://muyooo.com/wp-content/uploads/icon_muyooo.png" alt="著者アイコン">運営者のプロフィールはこちら</a>
+      <a class="wp-block-button__link wp-element-button" href="https://muyooo.com/about/"><img src="https://muyooo.com/wp-content/uploads/icon_muyooo.png" alt="著者アイコン">プロフィール</a>
     </div>
-    <style type="text/css">
-      <?php
-        // カテゴリー比率の計算と設定
-        $categoryArticleCountSum = array_sum($categoryCounts['count']);
-        $categoryRatioValue = 100 / $categoryArticleCountSum;
-        $i = 0;
-        for($i; $i < count($categoryCounts['slug']); $i++) {
-          $targetRatio = $categoryRatioValue * $categoryCounts['count'][$i];
-          $targetMoveClass = '.' . get_analyze_cat_ratio_class() . '--' . $categoryCounts['slug'][$i];
-          $targetMoveClassBefore = $targetMoveClass . '::before';
-          $targetDeg = 0;
-          if ($targetRatio <= 50) {
-            $targetDeg = 360 * $targetRatio / 100;
-            echo $targetMoveClassBefore . '{transform: rotate(' . $targetDeg . 'deg);}'; 
-          } else {
-            $targetDeg = 360 * ($targetRatio - 50) / 100;
-            echo $targetMoveClassBefore . '{transform: rotate(' . $targetDeg . 'deg);background-color: #f8b500;}';
-            echo $targetMoveClass . ':hover::before {background-color: #f8b500;transition: 0s;}';
-          }
-          $categoryHeadline = '.analyze-cat-headline--' . $categoryCounts['slug'][$i];
-          echo $categoryHeadline . '::after{content:"' . round($targetRatio, 1) . '%"}';
-        }
-      ?>
-      .analyze-cat-stop::before{transform: rotate(0deg);}
-    </style>
   </section>
   <h2 class="new-article-headline">新着記事</h2>
 <?php elseif(is_category()) : ?>
